@@ -127,3 +127,4 @@ Possible future steps:
 	- Hold (0)
 	- Sell  (-1) 
 1. Go through technicals to check accuracy or improve hyperparameters
+1. Figure out TSNE for visualization 
