@@ -78,9 +78,6 @@ This study aims to reduce the inherently noisy nature of the features associated
 ### Metric
 We will use two metrics, r^2 and mean squared error to score and compare our models. r^2 will show how much (0-1) of our model explains the variance. We will also use mean squared error to measure the difference between the estimator (y_test) and what is estimated (y_pred).
 
-
-### Benchmark
-
 ## Methods
 
 ### Building the Benchmark: 
