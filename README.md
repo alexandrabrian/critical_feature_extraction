@@ -21,7 +21,7 @@ We use the historical pricing data to generate the following 47 features, techni
     n:(14)
     n_ADX:(50)
 - `ATR`
-    -n:(14)
+    n:(14)
 - `BollingerB_5`
 - `Bollinger%b_5`
 - `BollingerB_20` 
