@@ -18,10 +18,10 @@ This project uses historical pricing data from the S&P500 with the following ter
 We use the historical pricing data to generate the following 47 features, technical indicators (TI):
 
 - `ADX`
-    -n:[14]
-    -n_ADX:[50]
+    -n:(14)
+    -n_ADX:(50)
 - `ATR`
-    -n:[14]
+    -n:(14)
 - `BollingerB_5`
 - `Bollinger%b_5`
 - `BollingerB_20` 
@@ -33,8 +33,8 @@ We use the historical pricing data to generate the following 47 features, techni
     - n:(5,20)
 -`Force_2`
 -`KST` 
-    - r: 10,10,10,15 
-    - n: 10,15,20,30
+    - r: (10,10,10,15)
+    - n: (10,15,20,30)
 -`MA` 
     - n:(5,20) 
 -`MACD_12_26`
