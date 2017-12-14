@@ -119,7 +119,7 @@ Variance score: 0.53
 The benchmark has outperformed the Gridsearch, which suggests we should look further into improving our model. 
 
 Possible future steps:
-1. Categories trading signals into 3 categories:
+1. Categorize trading signals into 3 categories:
 	 - Buy (1) 
 	- Hold (0)
 	- Sell  (-1) 
