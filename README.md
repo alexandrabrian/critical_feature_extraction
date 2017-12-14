@@ -72,11 +72,11 @@ We use the historical pricing data to generate the following 47 features, techni
 All investors seek to predict stock positions (buy, hold and sell) that generate a profitable return. There are many different methods employed to accomplish this goal, such as fundamental, sentiment  and technical analysis. Financial forecasting has many challenges because financial time series data are noisy, non-stationary and volatile. Due to the many features and noisy features associated with historical pricing data many investors have turned to machine learning, statistical and computational perspectives.    
 
 ### Solution Statement: 
-This study aims to reduce the inherently noisy nature of the features assocaited with the time-series data. First, naive PCA and Linear Regression will be used for our benchmark. Next, KPCA and SVD will be used as our model. 
+This study aims to reduce the inherently noisy nature of the features associated with the time-series data. First, naive PCA and Linear Regression will be used for our benchmark. Next, KPCA and SVD will be used as our model. 
 
 
 ### Metric
-We will use r^2 and mean squared error to score our models.
+We will use two metrics, r^2 and mean squared error to score and compare our models. r^2 will show how much (0-1) of our model explains the variance. We will also use mean squared error to measure the difference between the estimator (y_test) and what is estimated (y_pred).
 
 
 ### Benchmark
@@ -85,17 +85,45 @@ We will use r^2 and mean squared error to score our models.
 
 ### Building the Benchmark: 
 
-Benchmark Results: 
+1. Train, Test, Split
+2. Create a Pipeline:
+	- Standardize data 
+	- Naive PCA
+	- Linear Regression
+
+#### Benchmark Results:  
+
 Mean squared error: 0.02
+
 Variance score: 0.75
 
-### Feature Selection using KPCA
 
 ### GridSearch tuned KPCA and SVD
+1. Train, Test, Split
+2. Create Pipeline:
+	-  Standardize data
+	- KPCA
+	- SVR
+3. GridSearch:
+	- Tuned Hyperparameters:
+		- KPCA:
+			- Kernels: (rbf, sigmoid, cosine) 
+			- n_components: (2-11)
+			- Gamma: (10 evenly spaced numbers .1-1) 
+		- SVR:
+			- Kernels: (rbf, sigmoid)
 
 ### Results
 
 Mean squared error: 0.04
 Variance score: 0.53
 
-### Conclusion 
+### Conclusion
+The benchmark has outperformed the Gridsearch, which suggests we should look further into improving our model. 
+
+Possible future steps:
+1. Categories trading signals into 3 categories:
+	 - Buy (1) 
+	- Hold (0)
+	- Sell  (-1) 
+1. Go through technicals to check accuracy or improve hyperparameters
