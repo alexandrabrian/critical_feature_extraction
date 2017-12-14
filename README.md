@@ -30,7 +30,7 @@ We use the historical pricing data to generate the following 47 features, techni
     n:(10)
 -`Chaikin`
 -`EMA`
-    - n:(5,20)
+    n:(5,20)
 -`Force_2`
 -`KST` 
     r: (10,10,10,15)
