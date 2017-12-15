@@ -73,6 +73,12 @@ We use the historical pricing data to generate the following 47 features, techni
 - `TSI`
      r:(25)
      n:(13)
+     
+### Creating Targets:
+In order to create the targets for the model we will use Piecewise linear representation (PLR) to generate trading signals. 
+
+
+![](doc/img/trading_signal_2.png)
 
 
 ### Metric
