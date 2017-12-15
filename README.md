@@ -126,7 +126,10 @@ Variance score: -7.43
 ### Conclusion
 The benchmark has outperformed the Gridsearch, which suggests we should look further into improving our model. 
 
-Possible future steps:
+#### Possible future steps:
+1. Create a function that calculates our epsilon for calculating our trading signals with PLR.
+1. Add more stocks to our analysis
+1. Possibly use clustering to predict movement 
 1. Categorize trading signals into 3 categories:
 	 - Buy (1) 
 	- Hold (0)
