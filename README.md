@@ -21,58 +21,32 @@ This project uses historical pricing data from the S&P500 with the following ter
 - `Low`: The lowest price a stock traded during the course of a day. 
 
 #### Feature engineering:
-We use the historical pricing data to generate the following 47 features, technical indicators (TI):
+We use the historical pricing data to generate 47 features, technical indicators (TI), that include the following with different hyperparameters:
 
-- `ADX`
-    n:(14)
-    n_ADX:(50)
-- `ATR`
-    n:(14)
-- `BollingerB_5`
-- `Bollinger%b_5`
-- `BollingerB_20` 
-- `Bollinger%b_20`
-- `Copp`
-     n:(10)
-- `Chaikin`
-- `EMA`
-     n:(5,20)
-- `Force_2`
-- `KST` 
-     r: (10,10,10,15)
-     n: (10,15,20,30)
-- `MA` 
-     n:(5,20) 
-- `MACD_12_26`
-- `MACDsign_12_26`
-- `MACDdiff_12_26`
-- `MFI`
-     n:(14)
-- `Momentum_1`
-- `Mass Index`
-- `OBV`
-     n:(5,20)
-- `PP`
-- `R1`
-- `R2`
-- `R3`
-- `S1`
-- `S2`
-- `S3`
-- `ROC`
-     n:(5,20)
-- `RSI`
-     n:(6,12)
-- `STD`
-     n:(5,20)
-- `SO%d_5`
-- `SO%d_20`
-- `SO%k`
-- `Trix`
-     n:(5,20)
-- `TSI`
-     r:(25)
-     n:(13)
+- Moving Average
+- Exponential Moving Average
+- Momentum
+- Rate of Change
+- Average True Range
+- Bollinger Bands
+- Pivot Points, Supports and Resistances
+- Stochastic oscillator %K
+- Stochastic oscillator %D
+- Trix
+- Average Directional Movement Index
+- MACD, MACD Signal and MACD difference
+- Mass Index
+- KST Oscillator
+- Relative Strength Index
+- True Strength Index
+- Accumulation/Distribution
+- Chaikin Oscillator
+- Money Flow Index and Ratio
+- On-balance Volume
+- Force Index
+- Coppock Curve
+- Standard Deviation
+
      
 ### Creating Targets:
 In order to create the targets for the model we will use Piecewise linear representation (PLR) to generate trading signals. 
