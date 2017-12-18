@@ -70,9 +70,9 @@ We will use two metrics, r^2 and mean squared error to score and compare our mod
 
 #### Benchmark Results:  
 
-Mean squared error: 0.07
+Mean squared error: 0.11
 
-Variance score: -2.95
+Explain Variance: -5.11
 
 
 ### GridSearch tuned KPCA and SVD
@@ -92,9 +92,9 @@ Variance score: -2.95
 
 ### Results
 
-Mean squared error: 0.16
+Mean squared error: 0.12
 
-Variance score: -7.43
+Variance score: -5.17
 
 
 ### Conclusion
