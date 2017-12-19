@@ -68,11 +68,17 @@ We will use two metrics, r^2 and mean squared error to score and compare our mod
 	- Naive PCA
 	- Linear Regression
 
-#### Benchmark Results:  
+#### Benchmark Results on APPL:  
 
 Mean squared error: 0.11
 
 Explain Variance: -5.11
+
+#### Benchmark Results on APPL, CVS, WFC, ABBV:  
+
+Mean squared error: 0.12
+
+Explain Variance: -0.19
 
 
 ### GridSearch tuned KPCA and SVD
@@ -90,12 +96,15 @@ Explain Variance: -5.11
 		- SVR:
 			- Kernels: (rbf, sigmoid)
 
-### Results
+### Results on APPL
 
 Mean squared error: 0.12
 
 Variance score: -5.17
 
+### Results on APPL, CVS, WFC, ABBV
+
+TBD
 
 ### Conclusion
 The benchmark has outperformed the Gridsearch, which suggests we should look further into improving our model. 
