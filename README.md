@@ -56,7 +56,7 @@ In order to create the targets for the model we will use Piecewise linear repres
 
 
 ### Metric
-We will use two metrics, r^2 and mean squared error to score and compare our models. r^2 will show how much (0-1) of our model explains the variance. We will also use mean squared error to measure the difference between the estimator (y_test) and what is estimated (y_pred).
+We will use two metrics, mean squared error to score and compare our models. We will use mean squared error to measure the difference between the estimator (y_test) and what is estimated (y_pred).
 
 ## Methods
 
@@ -72,17 +72,11 @@ We will use two metrics, r^2 and mean squared error to score and compare our mod
 
 Mean squared error: 0.07
 
-Explain Variance: -2.95
-
-R^2 for Training Data: 0.81
 
 #### Benchmark Results For APPL using CVS, WFC TI's:  
 
 Mean squared error: 0.33
 
-Explain Variance: -17.86
-
-R^2 for Training Data: 0.89
 
 ### GridSearch tuned KPCA and SVR
 1. Train, Test, Split
@@ -104,21 +98,14 @@ R^2 for Training Data: 0.89
 
 Mean squared error: 0.19
 
-Explained Variance: -9.10
-
-R^2 for Training Data: 0.82
-
 ### Results on APPL using CVS, WFC TI's
 
 Mean squared error: 0.11
 
-Explained Variance: -5.20
-
-R^2 for Training Data: 0.90
 
 ### Conclusion
 
-The benchmark has outperformed the Gridsearch, which suggests we should look further into improving our model. 
+The benchmark using naive PCA and Linear Regression has outperformed the Gridsearch with KPCA and SVR, which suggests we should look further into improving our model. 
 
 #### Possible future steps:
 1. Create a function that calculates our epsilon for calculating our trading signals with PLR.
@@ -130,4 +117,3 @@ The benchmark has outperformed the Gridsearch, which suggests we should look fur
 	- Hold (0)
 	- Sell  (-1) 
 1. Go through technicals to check accuracy or improve hyperparameters
-1. Figure out TSNE for visualization 
